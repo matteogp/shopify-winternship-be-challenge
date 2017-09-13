@@ -4,11 +4,9 @@
 
 import json, urllib2, sys
 
-
 #global variables
 
 baseurl = "https://backend-challenge-winter-2017.herokuapp.com/customers.json?page="
-
 invalid_rules = []
 customer_list = []
 
@@ -80,8 +78,9 @@ def query_page (x):
 
   output_dict = {'invalid_customers':None}
   output_dict['invalid_customers']=customer_list
-  output = json.dumps(output_dict, indent = 2, separators=(',',':'))
-  print (output)
+  ##
+  print json.dumps(output_dict, indent = 2, separators=(',',':'))
+
 
 # generates invalid customer data from first page
 query_page(1)
