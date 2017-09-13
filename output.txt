@@ -1,0 +1,22 @@
+{
+  "invalid_customers":[
+    {
+      "id":2,
+      "invalid_fields":[
+        "name"
+      ]
+    },
+    {
+      "id":3,
+      "invalid_fields":[
+        "newsletter"
+      ]
+    },
+    {
+      "id":5,
+      "invalid_fields":[
+        "name"
+      ]
+    }
+  ]
+}
